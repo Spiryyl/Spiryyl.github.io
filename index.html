@@ -1,7 +1,56 @@
-<!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<title>Airport Example</title>
+		<style>
+			body {
+				background-image: url("https://media1.tenor.com/m/ZUy3LFGTfoUAAAAd/breaking-bad-saul-goodman.gif");
+				background-size: 100%;
+			}
+			.funny, tr, td, th {
+				width: 17%;
+				border: 1px solid rgb(216, 70, 95);
+				margin: auto;
+				border-collapse: collapse;
+				background-color: rgb(196, 196, 196);
+				font-size: 25px;
+			}
+
+			h1 {
+				width: 65%;
+				text-align: center;
+				margin: auto;
+				margin-top: 1%;
+				background-color: rgb(196, 196, 196);
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+		//define flight data Arrays
+		airline = ["Lufthanza", "Swiss Air", "USAir", "Delta", "British Airways", "Air France", "United", "AA"];
+		flightNumber = [356, 89, 1230, 952, 513, 910, 247, 315];
+		terminal = ["E", "D", "A", "C", "B", "F", "H", "G"];
+		gate = [5, 10, 3, 7, 1, 8, 2, 9];
+		departureTime = ["1230P", "0600P", "0247A", "0712A", "1200A", "1032P", "1100A", "0230P"];
+
+		//traveler flight
+		input = prompt("Please, select your flight numer: \n356, 89, 1230, 952, 513, 910, 247, or 315", "247");
+
+		//flightInfo(input);
+		for (i=0; i<8; i++) {
+			if (input == flightNumber[i]) break; 	//Jump out of the loop
+													//if the flight number is found
+		}//end for
+			
+		//print results
+			document.write("<table class=\"funny\"><tr><th>Here is your flight info:</th></tr>");
+			document.write("<tr><td>Airline: " + airline[i] + "</td></tr>");
+			document.write("<tr><td>Flight Number: " + flightNumber[i] + "</td></tr>");
+			document.write("<tr><td>Terminal: " + terminal[i] + "</td></tr>");
+			document.write("<tr><td>Gate: " + gate[i] + "</td></tr>");
+			document.write("<tr><td>Departure Time: " + departureTime[i] + "</td></tr></table>")
+			document.write("<h1>If your flight departure time is 1/2 hr from now, please proceed to gate.</h1>");
+			document.write("<h1>Thank you for choosing our airline.  Have a safe and pleasnat trip.</h1>");
+		</script>
+	</body>
 </html>
