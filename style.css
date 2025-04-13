@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: bisque;
+    width: 60%;
+    margin-left: 20%;
+    background-image: url("SALVATION.JPG");
+    background-size: 10%;
+}
+
+
+/* styles for Box 1 */
+
+div.box1 {
+    display: grid;
+    grid-template-columns:  33% 33% 33%;
+    text-align: center;
+    background-color: rgb(8, 58, 134);
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.button {
+    padding-inline: 25%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: rgb(240, 66, 66);
+    border-style: none;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
+    color: beige;
+    text-decoration: none;
+}
+
+/* styles for Box 2 */
+
+.box2 {
+    padding-left: 5%;
+    padding-bottom: 20px;
+    background-color: rgb(48, 110, 48);
+    color: rgb(255, 166, 1);
+}
+
+#box2title {
+    padding-top: 25px;
+    padding-bottom:15px
+}
+
+#firstname {
+    margin-top: 11px;
+    margin-bottom: 15px;
+}
+
+p.form {
+    margin-bottom: 15px;
+}
+
+.submit {
+    padding-inline: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    border-radius: 0
+}
+
+hr {
+    width: 50%;
+}
+
+/* styles for Box 3 */
+
+#bottomfeeder {
+    background-color: rgb(205, 153, 253);
+    text-align: center;
+    font-family:Haettenschweiler;
+    color: rgb(255, 255, 78);
+    font-size: 50px;
+    padding: 10%;
+}
+
+#bottomfeeder:hover {
+    background-color: rgb(255, 166, 0);
+    font-size: 50px;
+    padding: 10%;
+}
